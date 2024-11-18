@@ -33,7 +33,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ u-lucky }}
+          username: ${{u-lucky}}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push Image
