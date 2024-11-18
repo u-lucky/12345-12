@@ -27,5 +27,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build Docker IMage
-        run: docker build -t ghcr.io/u-lucky/12345-12-/pr-330:latest ./PR-22/
+        run: docker build -t ghcr.io/u-lucky/12345-12-/pr-330:latest ./pr-22/
 
