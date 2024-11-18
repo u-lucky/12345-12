@@ -1,0 +1,7 @@
+services:
+  test:  
+    image: python-app-server
+    container_name: yo
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
