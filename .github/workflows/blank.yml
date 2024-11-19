@@ -34,7 +34,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build Docker IMage
-        run: docker built -t ghcr.io/u-lucky/12345-12/pr-330:latest ./PR-22/
+        run: docker build -t ghcr.io/u-lucky/12345-12/pr-330:latest ./PR-22/
 
       - name: Push Image
         run: docker push ghcr.io/u-lucky/12345-12/pr-330:latest
@@ -101,6 +101,7 @@ jobs:
           token: 8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
           message: |
             Telegram - done
+          file: LWScreenShot 2024-10-07 at 00.35.44.png
 
 
     #8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
