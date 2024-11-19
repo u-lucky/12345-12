@@ -62,6 +62,15 @@ jobs:
       - name: Push Image
         run: docker push ghcr.io/u-lucky/12345-12/pr-330:latest
 
+      - name: send telegram message on push
+        if: succes()
+        uses: appleboy/telegram-action@master
+        with:
+          to: 1700868239
+          token: 8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
+          message: |
+            Python
+
   buildTelegram:
     runs-on: ubuntu-latest
 
@@ -75,7 +84,7 @@ jobs:
           message: |
             Сообщение (строка #1)
             Сообщение (строка #2)
-          if: ${{ success() }}
+
 
     #8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
 
