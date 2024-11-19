@@ -69,8 +69,8 @@ jobs:
       - name: send telegram message on push
         uses: appleboy/telegram-action@master
         with:
-          to: ${{ secrets.TGTOKEN }}
-          token: ${{ secrets.TELEGRAM_TO }}
+          to: 1700868239
+          token: 8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
           message: |
             Сообщение (строка #1)
             Сообщение (строка #2)
