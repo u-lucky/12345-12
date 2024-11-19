@@ -93,13 +93,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: send telegram message on push
-        if: success()
-        uses: appleboy/telegram-action@master
-        with:
-          to: 1700868239
-          token: 8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
-          photo: ./apple.jpg
+    
+    - uses: actions/checkout@v4
+    
+    - name: Login to registry
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: send telegram message on push
+      if: success()
+      uses: appleboy/telegram-action@master
+      with:
+        to: 1700868239
+        token: 8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
+        photo: ./apple.jpg
 
 
 
