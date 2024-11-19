@@ -101,7 +101,8 @@ jobs:
           token: 8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
           message: |
             Telegram - done
-          file: LWScreenShot 2024-10-07 at 00.35.44.png
+          file: ./12345-12/яблоко.jpeg
+
 
 
     #8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
