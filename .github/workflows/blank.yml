@@ -71,9 +71,9 @@ jobs:
       uses: appleboy/telegram-action@master
       with:
           to: ${{ 8098059555 }}
-          token: ${{ AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U }}
+          token: ${{AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U}}
           message: |
-            Сообщение (строка #1)
+            Сообщение gfsdf
             Сообщение (строка #2)
 
     #8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
