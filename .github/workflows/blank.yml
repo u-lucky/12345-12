@@ -48,6 +48,15 @@ jobs:
           message: |
             JS - done
 
+      - name: send telegram message on push
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: 1700868239
+          token: AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
+          message: |
+            JS - fail
+
   buildPython:
   # The type of runner that the job will run on
     runs-on: ubuntu-latest
