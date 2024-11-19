@@ -73,7 +73,7 @@ jobs:
           to: ${{ secrets.TGTOKEN }}
           token: ${{ secrets.TELEGRAM_TO }}
           message: |
-            Сообщение gfsdf
+            Сообщение (строка #1)
             Сообщение (строка #2)
 
     #8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
