@@ -34,7 +34,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build Docker IMage
-        run: docker build -t ghcr.io/u-lucky/12345-12/pr-330:latest ./PR-22/
+        run: docker built -t ghcr.io/u-lucky/12345-12/pr-330:latest ./PR-22/
 
       - name: Push Image
         run: docker push ghcr.io/u-lucky/12345-12/pr-330:latest
@@ -53,7 +53,7 @@ jobs:
         uses: appleboy/telegram-action@master
         with:
           to: 1700868239
-          token: AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
+          token: 8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
           message: |
             JS - fail
 
