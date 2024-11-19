@@ -67,6 +67,7 @@ jobs:
 
     steps:
       - name: send telegram message on push
+        if: succes()
         uses: appleboy/telegram-action@master
         with:
           to: 1700868239
@@ -74,6 +75,7 @@ jobs:
           message: |
             Сообщение (строка #1)
             Сообщение (строка #2)
+          if: ${{ success() }}
 
     #8098059555:AAHudxPUhFYIL2dtus6daIJdJCG1j7yq4-U
 
