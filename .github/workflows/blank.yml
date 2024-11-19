@@ -63,13 +63,12 @@ jobs:
         run: docker push ghcr.io/u-lucky/12345-12/pr-330:latest
 
   buildTelegram:
-    
     runs-on: ubuntu-latest
 
     steps:
-    - name: send telegram message on push
-      uses: appleboy/telegram-action@master
-      with:
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
+        with:
           to: ${{ secrets.TGTOKEN }}
           token: ${{ secrets.TELEGRAM_TO }}
           message: |
